@@ -303,16 +303,12 @@
     }
 \end{frame}
 
-\begin{frame}[noframenumbering]{BPR - Model likelihood}
+\begin{frame}[noframenumbering]{SVI - losses}
 
-\begin{align}
-    p &= p_M . p_R \\
-    p_M \left(x_{ij} |z_i=k \right)_{ij} &\sim \mathrm{Bernoulli}\left(\phi_j\right) \\
-     p_R(y_i |z_i=k,w_{i})_i  &\sim \mathrm{Bernoulli}\left(Y_i \right) \\
-\mathrm{logit}\left(Y_i \right) &= \beta_{0k} + \sum_a \beta_a w_{ia}
-\end{align}
-Note: Dirichlet process omitted
-    
+\begin{center}
+    \includegraphics[width=0.7\columnwidth]{losses_ex.png}
+\end{center}
+
 \end{frame}
 
 \end{document}
